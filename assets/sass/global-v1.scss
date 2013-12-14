@@ -1,4 +1,6 @@
-@import "partials/vars";
-@import "partials/fontface";
-@import "partials/normalize";
-@import "partials/layout";
+@import "partials/templates/portraits/init";
+
+// Aggregate all the stylesheets into one file.
+@import "partials/templates/portraits/layout";
+// @import "partials/templates/portraits/modules";
+

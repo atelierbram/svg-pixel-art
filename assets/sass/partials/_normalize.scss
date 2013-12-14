@@ -1,3 +1,131 @@
-body {
- color: pink;
+%reset {
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
+%clearfix-before {
+  content: " ";
+  display: table;
+}
+%clearfix-after {
+  content: " ";
+  display: table;
+}
+%clear {
+  clear: both;
+}
+%visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+%upcase {
+  text-transform: uppercase;
+}
+%pixel { font-family: Pixel, AvenirNextCondensed-DemiBold, Calibri, Corbel, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Tahoma, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+%monospace { font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+}
+
+%background-color { background-color: #aaa;
+}
+$monospace: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+$pixel: Pixel, Calibri, Corbel, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Lucida Grande", "Lucida Sans", "DejaVu Sans", Tahoma, Verdana, sans-serif;
+$highlight: #b3d4fc;
+
+$base-font-family: $monospace;
+
+::-moz-selection {
+    background: $highlight;
+    text-shadow: none;
+}
+
+::selection {
+    background: $highlight;
+    text-shadow: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+html {
+  font-family: $base-font-family;
+  font-size: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  @extend %background-color;
+}
+
+body {
+  font: 100%/1.375 $base-font-family;
+  color: #000;
+  @extend %background-color;
+}
+
+body, h1, h2, h3, p, dl, dt, dd, ul, li, small, figure, figcaption, img, blockquote {
+  @extend %reset;
+}
+a {
+  background: transparent;
+  text-decoration: none;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 1em;
+  line-height: 1;
+}
+h2 {
+  @extend %pixel;
+}
+
+svg,
+img {
+  border: 0;
+  max-width: 100%;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+
+pre {
+  white-space: pre-wrap;
+  text-align: left;
+  @extend %monospace;
+
+}
+small {
+    font-size: 80%;
+}
+/* ===== custom  ===== */
+
+

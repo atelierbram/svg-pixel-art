@@ -16,7 +16,8 @@
     "grunt-autoprefixer": "~0.4.2",
     "grunt-contrib-cssmin": "~0.7.0",
     "grunt-contrib-jshint": "~0.7.2",
-    "load-grunt-tasks": "~0.2.0"
+    "load-grunt-tasks": "~0.2.0",
+    "grunt-contrib-compass": "~0.7.0"
   },
   "dependencies": {
     "load-grunt-tasks": "~0.2.0"

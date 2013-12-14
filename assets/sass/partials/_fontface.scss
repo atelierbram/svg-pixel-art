@@ -1,3 +1,10 @@
-* {
- outline: 1px dotted salmon;
+@font-face {
+  font-family:"pixel";
+  src:url("../../type/pixel/pixelart.eot?") format("eot"),
+  url("../../type/pixel/pixelart.woff") format("woff"),
+  url("../../type/pixel/pixelart.ttf") format("truetype"),
+  url("../../type/pixel/pixelart.svg#Pixel-Art") format("svg");
+  font-weight:normal;
+  font-style:normal;
 }
+
