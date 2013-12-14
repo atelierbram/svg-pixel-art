@@ -7,7 +7,7 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          cssmin will minify later
+          // cssmin will minify later
           style: 'expanded'
         },
         files: {
