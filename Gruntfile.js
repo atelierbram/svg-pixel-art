@@ -51,8 +51,8 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'assets/js/libs/*.js',
-          'assets/js/convert-to-svg.js'
+          'assets/js/convert-to-svg.js',
+          'assets/js/libs/*.js'
         ],
         dest: 'assets/js/build/production.js'
       }
@@ -107,7 +107,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           port: 8000,
-          base: '.'
+          base: './'
         }
       }
     },
