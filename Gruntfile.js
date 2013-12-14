@@ -4,18 +4,18 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // sass: {
-    //   dist: {
-    //     options: {
+    sass: {
+      dist: {
+        options: {
           // cssmin will minify later
-    //       style: 'expanded'
-    //     },
-    //     files: {
-    //       'assets/css/build/global-v1.css': 'assets/sass/global-v1.scss'
-    //     }
-    //   }
-    // },
-    //
+          style: 'expanded'
+        },
+        files: {
+          'assets/css/build/global-v1.css': 'assets/sass/global-v1.scss'
+        }
+      }
+    },
+
     compass: {
       dist: {
         options: {
