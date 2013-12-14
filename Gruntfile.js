@@ -51,8 +51,8 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'assets/js/convert-to-svg.js',
-          'assets/js/libs/*.js'
+          'assets/js/libs/d3.v3.min.js',
+          'assets/js/convert-to-svg.js'
         ],
         dest: 'assets/js/build/production.js'
       }
