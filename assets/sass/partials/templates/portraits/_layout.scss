@@ -2,7 +2,7 @@
   // outline: 1px dotted salmon;
 }
 .centered {
-  @include zen-grid-background();
+  // @include zen-grid-background();
   margin: {
     left: auto;
     right: auto;
@@ -13,7 +13,7 @@
 }
 
 .embed-container {
-  @include zen-grid-background();
+  // @include zen-grid-background();
   /* max-width: 1550px; */
   max-width: 96em; /* 1536px */
   /* max-width: 800px; */
@@ -64,7 +64,7 @@ $zen-columns: 16;
   $zen-columns: 16;
 
   .centered {
-    @include zen-grid-background();
+    // @include zen-grid-background();
   }
 
 }

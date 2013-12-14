@@ -4,25 +4,25 @@ module.exports = function(grunt) {
 
     pkg: grunt.file.readJSON('package.json'),
 
-    // sass: {
-    //   dist: {
-    //     options: {
-          // cssmin will minify later
-    //       style: 'expanded'
-    //     },
-    //     files: {
-    //       'assets/css/build/global-v1.css': 'assets/sass/global-v1.scss'
-    //     }
-    //   }
-    // },
-
-    compass: {
+    sass: {
       dist: {
         options: {
-          config: 'config/config.rb'
+          cssmin will minify later
+          style: 'expanded'
+        },
+        files: {
+          'assets/css/build/global-v1.css': 'assets/sass/global-v1.scss'
         }
       }
     },
+
+    // compass: {
+    //   dist: {
+    //     options: {
+    //       config: 'config/config.rb'
+    //     }
+    //   }
+    // },
 
     autoprefixer: {
       options: {
@@ -116,10 +116,10 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.loadNpmTasks('grunt-contrib-compass');
+//  grunt.loadNpmTasks('grunt-contrib-compass');
   // Default Task is basically a rebuild
-//  grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
-  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+ grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
+//  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 
