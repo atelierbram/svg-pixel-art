@@ -1,6 +1,10 @@
 {
   "name": "svg-pixel-art",
   "version": "0.1.0",
+  "repository" :
+  { "type" : "git"
+    , "url" : "http://github.com/atelierbram/svg-pixel-art.git"
+  }
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.6.3",
