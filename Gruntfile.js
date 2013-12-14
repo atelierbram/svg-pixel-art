@@ -31,7 +31,7 @@ module.exports = function(grunt) {
       multiple_files: {
         expand: true,
         flatten: true,
-        src: 'assets/css/build/*.css',
+        src: 'assets/css/build/global-v1.css',
         dest: 'assets/css/build/prefixed/'
       }
     },
@@ -51,7 +51,7 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'assets/js/libs/d3.v3.min.js',
+          'assets/js/libs/d3.js',
           'assets/js/convert-to-svg.js'
         ],
         dest: 'assets/js/build/production.js'
