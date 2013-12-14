@@ -44,26 +44,26 @@ module.exports = function(grunt) {
       }
     },
 
-    jshint: {
-      beforeconcat: ['assets/js/*.js']
-    },
+    // jshint: {
+    //   beforeconcat: ['assets/js/*.js']
+    // },
 
-    concat: {
-      dist: {
-        src: [
-          'assets/js/libs/d3.js',
-          'assets/js/convert-to-svg.js'
-        ],
-        dest: 'assets/js/build/production.js'
-      }
-    },
+    // concat: {
+    //   dist: {
+    //     src: [
+    //       'assets/js/libs/d3.js',
+    //       'assets/js/convert-to-svg.js'
+    //     ],
+    //     dest: 'assets/js/build/production.js'
+    //   }
+    // },
 
-    uglify: {
-      build: {
-        src: 'assets/js/build/production.js',
-        dest: 'assets/js/build/production.min.js'
-      }
-    },
+    // uglify: {
+    //   build: {
+    //     src: 'assets/js/build/production.js',
+    //     dest: 'assets/js/build/production.min.js'
+    //   }
+    // },
 
     imagemin: {
       dynamic: {
@@ -80,13 +80,13 @@ module.exports = function(grunt) {
       options: {
         livereload: true,
       },
-      scripts: {
-        files: ['assets/js/libs/*.js','assets/js/*.js'],
-        tasks: ['concat', 'uglify', 'jshint'],
-        options: {
-          spawn: false,
-        }
-      },
+      // scripts: {
+      //   files: ['assets/js/libs/*.js','assets/js/*.js'],
+      //   tasks: ['concat', 'uglify', 'jshint'],
+      //   options: {
+      //     spawn: false,
+      //   }
+      // },
       css: {
         files: ['assets/css/*.scss'],
         tasks: ['assets/sass', 'autoprefixer', 'cssmin'],
@@ -118,8 +118,8 @@ module.exports = function(grunt) {
 
 //  grunt.loadNpmTasks('grunt-contrib-compass');
   // Default Task is basically a rebuild
- grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
-//  grunt.registerTask('default', ['concat', 'uglify', 'imagemin']);
+ // grunt.registerTask('default', ['concat', 'uglify', 'sass', 'imagemin']);
+ grunt.registerTask('default', ['sass', 'imagemin']);
 
   grunt.registerTask('dev', ['connect', 'watch']);
 
