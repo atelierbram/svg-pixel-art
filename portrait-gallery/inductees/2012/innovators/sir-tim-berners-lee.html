@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html class="html">
+<head>
+<meta charset="utf-8" />
+<title>Pixel art portrait of Bram de Haan</title>
+<!-- <link rel="stylesheet" href="http://localhost/~bram/playground/thewebrocks.com/demos/zoom-and-pick/zoomandpick.css"> -->
+<!-- <link href='http://fonts.googleapis.com/css?family=VT323' rel='stylesheet' type='text/css'> -->
+<style>
+@font-face {
+  font-family:"pixel";
+  src:url("../../assets/type/pixelart.eot?") format("eot"),
+  url("../../assets/type/pixelart.woff") format("woff"),
+  url("../../assets/type/pixelart.ttf") format("truetype"),
+  url("../../assets/type/pixelart.svg#Pixel-Art") format("svg");
+  font-weight:normal;
+  font-style:normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  /* outline: 1px dotted salmon; */
+  /* -webkit-box-sizing: border-box; */
+  /* -moz-box-sizing: border-box; */
+  /* box-sizing: border-box; */
+}
+html /*, body */ {
+  /* background-color: #ceedec; */
+  /* background-color: #b5dddc; */
+  background-color: #8e7f7e;
+  /* background-color: #796451; */
+  overflow-y: hidden;
+}
+body {
+  font: 100%/1.375 sans-serif;
+  height: 100%;
+}
+.highlight {
+  background-color: yellow;
+}
+.bc-ca332c {
+  background-color: #ca332c;
+}
+.bc-44302b {
+  /* background-color: #44302b; */
+  background-color: #69422C;
+}
+.container {
+  /* max-width: 40em; */
+  max-width: 512px;
+  margin: 0 auto;
+  border-left: 1em solid  #69422C;
+  border-right: 1em solid #69422C;
+  /* outline: 1px dotted green; */
+}
+.svg-container {
+  margin-top: 2em;
+  padding-top: 1em;
+}
+svg {
+  max-width: 100%;
+  /* margin-top: 2em; */
+  /* outline: 1px dotted salmon; */
+}
+/* .header-container, */
+.caption-container {
+  min-height: 181px; /* 181 * 3 = 543  */
+}
+/* .header-container { */
+/*   margin-top: 2em; */
+/* } */
+.caption-container {
+  /* border-bottom: 1em solid #796451; */
+  margin-bottom: 1em;
+  text-align: center;
+}
+h1 {
+  /* font-family: 'VT323', 'pixel', sans-serif; */
+  font-family: 'pixel', sans-serif;
+  /* padding-top: .5em; */
+}
+.alpha {
+  font-size: 3em;
+}
+/* .a-center { */
+/*   text-align: center; */
+/* } */
+
+.block {
+  display: block;
+}
+h1, a {
+  color: #f0f9fb;
+}
+rect {
+  /* outline: 1px dotted salmon;  */
+  /* cursor: crosshair; */
+  /* cursor: pointer; */
+}
+
+pre {
+  white-space: pre-wrap;
+  text-align: left;
+  /* font-family: 'VT323', monospace; */
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  font-size: .875em;
+}
+</style>
+</head>
+<body>
+<div id="svg-container" class="container svg-container bc-44302b"></div>
+<div id="caption-container" class="container caption-container bc-44302b">
+  <h1 class="alpha">Tim Berners-Lee</h1>
+  <pre>In 1989, Tim Berners-Lee invented the World Wide Web, an Internet-based hypermedia initiative for global information sharing while at CERN, the European Particle Physics Laboratory.
+See more at: <a href="http://internethalloffame.org/inductees/tim-berners-lee">Internet Hall of Fame</a>
+  <a href="http://www.w3.org/People/Berners-Lee/" class="block">Sir Tim Berners-Lee at W3C.org</a>
+  </pre>
+
+</div>
+
+<script>
+var imgObj = new Image();
+imgObj.src = "../../assets/img/pic/innovators/SirTimBerners-Lee.png";
+</script>
+
+<script src="../../assets/js/libs/d3.v3.min.js"></script>
+<script type="text/javascript" src="../../assets/js/convert-to-svg.js"></script>
+</body>
+</html>
