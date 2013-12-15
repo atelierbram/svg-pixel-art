@@ -1,6 +1,6 @@
 @font-face {
   font-family: "pixel";
-  src: url("../../type/pixel/pixelart.eot?") format("eot"), url("../../type/pixel/pixelart.woff") format("woff"), url("../../type/pixel/pixelart.ttf") format("truetype"), url("../../type/pixel/pixelart.svg#Pixel-Art") format("svg");
+  src: url("../type/pixel/pixelart.eot?") format("eot"), url("../type/pixel/pixelart.woff") format("woff"), url("../type/pixel/pixelart.ttf") format("truetype"), url("../type/pixel/pixelart.svg#Pixel-Art") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -29,7 +29,8 @@ blockquote {
 
 /* line 30, ../sass/partials/_normalize.scss */
 
-h2 {
+h2,
+h1 {
   font-family: Pixel, AvenirNextCondensed-DemiBold, Calibri, Corbel, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Tahoma, Verdana, sans-serif;
   text-transform: uppercase;
 }
@@ -255,4 +256,74 @@ small {
 .container {
   margin: 0 auto;
   /* outline: 1px dotted salmon; */
+  max-width: 512px;
+  margin: 0 auto;
+  border-left: 1em solid transparent;
+  border-right: 1em solid transparent;
+}
+
+/* line 65, ../sass/partials/templates/portraits/_layout.scss */
+
+.svg-container {
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+/* .header-container, */
+
+/* line 70, ../sass/partials/templates/portraits/_layout.scss */
+
+.caption-container {
+  min-height: 181px;
+  /* 181 * 3 = 543  */
+}
+
+/* .header-container { */
+
+/*   margin-top: 2em; */
+
+/* line 76, ../sass/partials/templates/portraits/_layout.scss */
+
+.caption-container {
+  /* border-bottom: 1em solid #796451; */
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+/* line 81, ../sass/partials/templates/portraits/_layout.scss */
+
+h1 {
+  /* font-family: 'VT323', 'pixel', sans-serif; */
+  /* padding-top: .5em; */
+}
+
+/* line 87, ../sass/partials/templates/portraits/_layout.scss */
+
+.alpha {
+  font-size: 3em;
+}
+
+/* .a-center { */
+
+/*   text-align: center; */
+
+/* line 94, ../sass/partials/templates/portraits/_layout.scss */
+
+.block {
+  display: block;
+}
+
+/* line 97, ../sass/partials/templates/portraits/_layout.scss */
+
+h1,
+a {
+  color: #f0f9fb;
+}
+
+/* line 100, ../sass/partials/templates/portraits/_layout.scss */
+
+rect {
+  /* outline: 1px dotted salmon;  */
+  /* cursor: crosshair; */
+  /* cursor: pointer; */
 }
