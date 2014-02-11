@@ -1,32 +1,13 @@
-## SVG Pixel Art Portraits with SVG
+## Pixel Art with SVG
 
 Pixel art as SVG vectors
 
 
-### Credits
-
-* [Custom Gravatars by John Slegers](http://www.johnslegers.com/gravatar/)
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-
-### Resources
-
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
-* []()
+* [Pixel Art Portraits](http://atelierbram.github.io/svg-pixel-art/portraits/)
 
 ### License
-* []()
+
+Copyright (c) 2013 [Bram de Haan](http://atelierbramdehaan.nl/)
+
+Released under [MIT Licence](http://atelierbram.mit-license.org)
 
