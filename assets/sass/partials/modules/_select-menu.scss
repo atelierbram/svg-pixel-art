@@ -1,0 +1,39 @@
+/*
+ * http://cssdeck.com/labs/styling-select-box-with-css3
+* http://codepen.io/ericrasch/pen/zjDBx
+* */
+/* -------------------- Page Styles (not required) */
+.select-menu {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  float: right;
+  margin: 1em .25em 0 0;
+  height: 2em;
+  overflow: hidden;
+  width: 16em;
+}
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+
+.select-menu select {
+  // background: transparent;
+  background: url(../img/ui/icon-selectbox.png) 88% 0 no-repeat;
+  border: none;
+  font: 12px/1.5 $monospace;
+  height: 29px;
+  padding: .5em;
+  // If you add too much padding here, the options won't show in IE
+  width: 278px;
+  border-radius: 0;
+  background-color: #666;
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  align-items: left;
+}
+
+

@@ -1,69 +1,149 @@
+/* line 1, ../sass/partials/templates/portraits/_vars.scss */
+body, h1, h2, h3, p, dl, dt, dd, ul, li, small, figure, figcaption, img, blockquote, .col {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* line 17, ../sass/partials/templates/portraits/_vars.scss */
+header h1 {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+/* line 30, ../sass/partials/templates/portraits/_vars.scss */
+h2, h1,
+.tagline {
+  font-family: Pixel, AvenirNextCondensed-DemiBold, Calibri, Corbel, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Tahoma, Verdana, sans-serif;
+  text-transform: uppercase;
+}
+
+/* line 33, ../sass/partials/templates/portraits/_vars.scss */
+pre {
+  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+}
+
+/* line 38, ../sass/partials/templates/portraits/_vars.scss */
+html, body {
+  background-color: #aaa;
+}
+
+/*
+ * http://cssdeck.com/labs/styling-select-box-with-css3
+* http://codepen.io/ericrasch/pen/zjDBx
+* */
+/* -------------------- Page Styles (not required) */
+/* line 6, ../sass/partials/modules/_select-menu.scss */
+.select-menu {
+  /* position: absolute; */
+  /* top: 0; */
+  /* right: 0; */
+  float: right;
+  margin: 1em .25em 0 0;
+  height: 2em;
+  overflow: hidden;
+  width: 16em;
+}
+
+/* -------------------- Select Box Styles: bavotasan.com Method (with special adaptations by ericrasch.com) */
+/* -------------------- Source: http://bavotasan.com/2011/style-select-box-using-only-css/ */
+/* line 20, ../sass/partials/modules/_select-menu.scss */
+.select-menu select {
+  background: url(../img/ui/icon-selectbox.png) 88% 0 no-repeat;
+  border: none;
+  font: 12px/1.5 Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
+  height: 29px;
+  padding: .5em;
+  width: 278px;
+  border-radius: 0;
+  background-color: #666;
+  color: #fff;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-align: left;
+  -webkit-align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
+}
+
+/* line 3, ../sass/partials/modules/_animation.scss */
+.col,
+.effeckt-caption,
+.effeckt-caption a {
+  overflow: hidden;
+}
+
+/* line 12, ../sass/partials/modules/_animation.scss */
+.effeckt-caption {
+  position: relative;
+}
+
+/* line 16, ../sass/partials/modules/_animation.scss */
+.effeckt-caption img {
+  display: block;
+}
+
+/* line 22, ../sass/partials/modules/_animation.scss */
+.effeckt-caption a {
+  width: 100%;
+  float: left;
+}
+
+/* line 26, ../sass/partials/modules/_animation.scss */
+.effeckt-caption figcaption {
+  position: absolute;
+  -webkit-transition: 500ms;
+  transition: 500ms;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 35, ../sass/partials/modules/_animation.scss */
+.effeckt-caption figcaption p {
+  text-align: center;
+  padding: 1em 0;
+}
+
+/* line 41, ../sass/partials/modules/_animation.scss */
+.effeckt-caption[data-effeckt-type="quarter-slide-up"] figcaption {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 48, ../sass/partials/modules/_animation.scss */
+.effeckt-caption[data-effeckt-type="quarter-slide-up"]:hover figcaption,
+.effeckt-caption[data-effeckt-type="quarter-slide-up"]:active figcaption {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0);
+}
+
 @font-face {
   font-family: "pixel";
   src: url("../type/pixel/pixelart.eot?") format("eot"), url("../type/pixel/pixelart.woff") format("woff"), url("../type/pixel/pixelart.ttf") format("truetype"), url("../type/pixel/pixelart.svg#Pixel-Art") format("svg");
   font-weight: normal;
   font-style: normal;
 }
-
 /* line 1, ../sass/partials/_normalize.scss */
-
-body,
-h1,
-h2,
-h3,
-p,
-dl,
-dt,
-dd,
-ul,
-li,
-small,
-figure,
-figcaption,
-img,
-blockquote {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-/* line 30, ../sass/partials/_normalize.scss */
-
-h2,
-h1 {
-  font-family: Pixel, AvenirNextCondensed-DemiBold, Calibri, Corbel, "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Tahoma, Verdana, sans-serif;
-  text-transform: uppercase;
-}
-
-/* line 33, ../sass/partials/_normalize.scss */
-
-pre {
-  font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
-}
-
-/* line 36, ../sass/partials/_normalize.scss */
-
-html,
-body {
-  background-color: #aaa;
-}
-
-/* line 44, ../sass/partials/_normalize.scss */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* line 49, ../sass/partials/_normalize.scss */
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/* line 65, ../sass/partials/_normalize.scss */
-
 article,
 aside,
 details,
@@ -71,7 +151,6 @@ figcaption,
 figure,
 footer,
 header,
-hgroup,
 main,
 nav,
 section,
@@ -79,8 +158,7 @@ summary {
   display: block;
 }
 
-/* line 69, ../sass/partials/_normalize.scss */
-
+/* line 15, ../sass/partials/_normalize.scss */
 html {
   font-family: Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   font-size: 100%;
@@ -89,35 +167,37 @@ html {
   text-rendering: optimizeLegibility;
 }
 
-/* line 78, ../sass/partials/_normalize.scss */
-
+/* line 24, ../sass/partials/_normalize.scss */
 body {
   font: 100%/1.375 Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", "Courier New", Courier, monospace;
   color: #000;
 }
 
-/* line 87, ../sass/partials/_normalize.scss */
+/* line 33, ../sass/partials/_normalize.scss */
+html,
+body, .wrapper {
+  min-height: 100%;
+  height: 100%;
+}
 
+/* line 38, ../sass/partials/_normalize.scss */
 a {
   background: transparent;
   text-decoration: none;
 }
 
-/* line 92, ../sass/partials/_normalize.scss */
-
+/* line 42, ../sass/partials/_normalize.scss */
 a:focus {
   outline: thin dotted;
 }
 
-/* line 97, ../sass/partials/_normalize.scss */
-
+/* line 45, ../sass/partials/_normalize.scss */
 a:active,
 a:hover {
   outline: 0;
 }
 
-/* line 103, ../sass/partials/_normalize.scss */
-
+/* line 50, ../sass/partials/_normalize.scss */
 h1,
 h2,
 h3 {
@@ -125,56 +205,118 @@ h3 {
   line-height: 1;
 }
 
-/* line 112, ../sass/partials/_normalize.scss */
+/* line 59, ../sass/partials/_normalize.scss */
+ul {
+  list-style: none;
+}
 
+/* line 62, ../sass/partials/_normalize.scss */
 svg,
 img {
   border: 0;
   max-width: 100%;
+  display: block;
 }
 
-/* line 116, ../sass/partials/_normalize.scss */
-
+/* line 68, ../sass/partials/_normalize.scss */
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* line 120, ../sass/partials/_normalize.scss */
-
+/* line 72, ../sass/partials/_normalize.scss */
 pre {
   white-space: pre-wrap;
   text-align: left;
 }
 
-/* line 126, ../sass/partials/_normalize.scss */
-
+/* line 78, ../sass/partials/_normalize.scss */
 small {
   font-size: 80%;
 }
 
-/* ===== custom  ===== */
-
-/* line 4, ../sass/partials/templates/portraits/_layout.scss */
-
-.centered {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #ffdede), color-stop(50%, transparent)) 16px top no-repeat, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, transparent), color-stop(50%, #ffdede)) -16px top no-repeat;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat, -webkit-linear-gradient(left, #ffdede 50%, transparent 50%) 16px top no-repeat, -webkit-linear-gradient(left, transparent 50%, #ffdede 50%) -16px top no-repeat;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat,-webkit-gradient(linear, left top, right top, from(#ffdede), to(transparent)) 16px top no-repeat,-webkit-gradient(linear, left top, left bottom, from(left), color-stop(50%, transparent), to(#ffdede)) -16px top no-repeat;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat, linear-gradient(left, #ffdede 50%, transparent 50%) 16px top no-repeat, linear-gradient(left, transparent 50%, #ffdede 50%) -16px top no-repeat;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1536px;
-  position: relative;
-  overflow: hidden;
+/* line 81, ../sass/partials/_normalize.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
 }
 
-/* line 15, ../sass/partials/templates/portraits/_layout.scss */
+/* line 86, ../sass/partials/_normalize.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
 
+/* ===== custom  ===== */
+/* line 2, ../sass/partials/templates/portraits/_layout.scss */
+* {
+  /* outline: $outline; */
+}
+
+/* line 5, ../sass/partials/templates/portraits/_layout.scss */
+header {
+  overflow: auto;
+}
+
+/* line 8, ../sass/partials/templates/portraits/_layout.scss */
+.wrapper {
+  /* position: relative; */
+  overflow: auto;
+}
+
+/* line 12, ../sass/partials/templates/portraits/_layout.scss */
+.logo {
+  float: left;
+  /* display: block; */
+  width: 160px;
+  height: 100px;
+}
+
+/* line 18, ../sass/partials/templates/portraits/_layout.scss */
+.footer {
+  width: 100%;
+  height: 2em;
+  background-color: #404040;
+  text-align: center;
+}
+
+/* line 24, ../sass/partials/templates/portraits/_layout.scss */
+.portrait-gallery .footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/* line 30, ../sass/partials/templates/portraits/_layout.scss */
+.svg-gallery {
+  margin: 1em auto 6em;
+  max-width: 64em;
+  padding: 1em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 36, ../sass/partials/templates/portraits/_layout.scss */
+.svg-gallery a {
+  display: block;
+}
+
+/* line 39, ../sass/partials/templates/portraits/_layout.scss */
+.col {
+  float: left;
+  width: 33.33333%;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* line 46, ../sass/partials/templates/portraits/_layout.scss */
+.container,
+.footer {
+  background-color: #444;
+}
+
+/* line 50, ../sass/partials/templates/portraits/_layout.scss */
 .embed-container {
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, #ffdede), color-stop(50%, transparent)) 16px top no-repeat, -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(50%, transparent), color-stop(50%, #ffdede)) -16px top no-repeat;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat, -webkit-linear-gradient(left, #ffdede 50%, transparent 50%) 16px top no-repeat, -webkit-linear-gradient(left, transparent 50%, #ffdede 50%) -16px top no-repeat;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat,-webkit-gradient(linear, left top, right top, from(#ffdede), to(transparent)) 16px top no-repeat,-webkit-gradient(linear, left top, left bottom, from(left), color-stop(50%, transparent), to(#ffdede)) -16px top no-repeat;
-  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% top no-repeat, url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAARVJREFUeNpi/P//PwMMMDIyMpALYOawEKEWpIYPiAWg7M9A/B6If4LMwaaYkGHiQKwFxJpAzA3E94H4LBA/BOJfWJ0Kw0iAFYhFgFgHiIOBuPHGjRtvf//+/X/WrFmHgHxPqIsxzGHC4TJ+IDYCYu+EhIQ4oGG5ysrKQiCJX79+cQApXqilDMR6mROI5Z8+fVotJibGS0rk4HLhd1AYSUtLd8rLyy/78uXLb0oN/AjE54D44LNnz27euXPnHaUGglz0BoifAvEHaniZbDBq4BA0EJR8vjAxMf2FCbCxsf2AljhYEzsjgfIQlKe1gVgPiCWAGGTwbWylDcwcQgayQIssASj9D5qLMMpDYg0kucSmeqQABBgAsyJrV7MArsMAAAAASUVORK5CYII=") 50% bottom no-repeat, linear-gradient(left, #ffdede 50%, transparent 50%) 16px top no-repeat, linear-gradient(left, transparent 50%, #ffdede 50%) -16px top no-repeat;
   /* max-width: 1550px; */
   max-width: 96em;
   /* 1536px */
@@ -186,60 +328,12 @@ small {
   overflow: hidden;
 }
 
-/* line 27, ../sass/partials/templates/portraits/_layout.scss */
-
-.grid-item {
-  padding-left: 16px;
-  padding-right: 16px;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  word-wrap: break-word;
-}
-
-/* line 56, ../sass/partials/zen-grids/_grids.scss */
-
-.header:before,
-.header:after,
-.footer:before,
-.footer:after {
-  content: "";
-  display: table;
-}
-
-/* line 60, ../sass/partials/zen-grids/_grids.scss */
-
-.header:after,
-.footer:after {
-  clear: both;
-}
-
-/* line 36, ../sass/partials/templates/portraits/_layout.scss */
-
-.row,
-.footer {
-  clear: left;
-}
-
-/* line 41, ../sass/partials/templates/portraits/_layout.scss */
-
-.box-model {
-  float: left;
-  width: 100%;
-  margin-left: 0%;
-  margin-right: -100%;
-}
-
-/* line 45, ../sass/partials/templates/portraits/_layout.scss */
-
+/* line 80, ../sass/partials/templates/portraits/_layout.scss */
 .row {
-  /* overflow: hidden; */
   overflow: auto;
 }
 
-/* line 49, ../sass/partials/templates/portraits/_layout.scss */
-
+/* line 83, ../sass/partials/templates/portraits/_layout.scss */
 .unit {
   width: 33.33333%;
   max-width: 512px;
@@ -247,83 +341,237 @@ small {
   float: left;
   /* outline: 1px dotted brown; */
   -webkit-box-sizing: border-box;
+  /* outline: 1px dotted brown; */
   -moz-box-sizing: border-box;
+  /* outline: 1px dotted brown; */
   box-sizing: border-box;
 }
 
-/* line 57, ../sass/partials/templates/portraits/_layout.scss */
-
-.container {
+/* line 91, ../sass/partials/templates/portraits/_layout.scss */
+.container,
+.svg-container,
+.caption-container,
+.pagenav {
   margin: 0 auto;
-  /* outline: 1px dotted salmon; */
   max-width: 512px;
-  margin: 0 auto;
   border-left: 1em solid transparent;
   border-right: 1em solid transparent;
+  overflow: hidden;
 }
 
-/* line 65, ../sass/partials/templates/portraits/_layout.scss */
-
+/* line 99, ../sass/partials/templates/portraits/_layout.scss */
 .svg-container {
-  margin-top: 2em;
+  margin-top: 1em;
   padding-top: 1em;
 }
 
 /* .header-container, */
-
-/* line 70, ../sass/partials/templates/portraits/_layout.scss */
-
+/* line 105, ../sass/partials/templates/portraits/_layout.scss */
 .caption-container {
   min-height: 181px;
   /* 181 * 3 = 543  */
 }
 
 /* .header-container { */
-
 /*   margin-top: 2em; */
-
-/* line 76, ../sass/partials/templates/portraits/_layout.scss */
-
+/* } */
+/* line 112, ../sass/partials/templates/portraits/_layout.scss */
 .caption-container {
   /* border-bottom: 1em solid #796451; */
   margin-bottom: 1em;
   text-align: center;
 }
 
-/* line 81, ../sass/partials/templates/portraits/_layout.scss */
-
-h1 {
-  /* font-family: 'VT323', 'pixel', sans-serif; */
-  /* padding-top: .5em; */
-}
-
-/* line 87, ../sass/partials/templates/portraits/_layout.scss */
-
+/* line 122, ../sass/partials/templates/portraits/_layout.scss */
 .alpha {
   font-size: 3em;
 }
 
-/* .a-center { */
+@-webkit-keyframes color {
+  /* line 126, ../sass/partials/templates/portraits/_layout.scss */
+  0% {
+    color: transparent;
+    text-shadow: none;
+  }
 
-/*   text-align: center; */
+  /* line 130, ../sass/partials/templates/portraits/_layout.scss */
+  100% {
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+}
 
-/* line 94, ../sass/partials/templates/portraits/_layout.scss */
+@keyframes color {
+  /* line 126, ../sass/partials/templates/portraits/_layout.scss */
+  0% {
+    color: transparent;
+    text-shadow: none;
+  }
 
+  /* line 130, ../sass/partials/templates/portraits/_layout.scss */
+  100% {
+    color: rgba(255, 255, 255, 0.75);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.25);
+  }
+}
+/* line 135, ../sass/partials/templates/portraits/_layout.scss */
+.tagline {
+  float: left;
+  clear: left;
+  width: 160px;
+  font-size: 1.75em;
+  /* text-shadow: 1px 1px 0px #555; */
+  margin: 0 0 0 .125em;
+  line-height: 1;
+  display: inline-block;
+}
+
+/* line 146, ../sass/partials/templates/portraits/_layout.scss */
+.tagline a {
+  -webkit-animation-name: color;
+  animation-name: color;
+  -webkit-animation-duration: 18s;
+  animation-duration: 18s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 151, ../sass/partials/templates/portraits/_layout.scss */
 .block {
   display: block;
 }
 
-/* line 97, ../sass/partials/templates/portraits/_layout.scss */
-
-h1,
-a {
+/* line 154, ../sass/partials/templates/portraits/_layout.scss */
+.alpha,
+.container a,
+footer a {
   color: #f0f9fb;
 }
 
-/* line 100, ../sass/partials/templates/portraits/_layout.scss */
+/* line 163, ../sass/partials/templates/portraits/_layout.scss */
+svg {
+  max-width: 100%;
+}
 
-rect {
-  /* outline: 1px dotted salmon;  */
-  /* cursor: crosshair; */
-  /* cursor: pointer; */
+/* line 170, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav {
+  padding-bottom: 3em;
+}
+
+/* line 174, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav ul {
+  overflow: auto;
+  width: 100%;
+}
+
+/* line 178, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav ul,
+.pagenav li,
+.pagenav a {
+  float: left;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 185, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li {
+  width: 33.33333%;
+  position: relative;
+}
+
+/* line 189, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav a {
+  width: 100%;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+/* line 193, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/* line 197, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:nth-child(0n+2) a {
+  text-align: center;
+}
+
+/* line 200, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:last-of-type a {
+  float: right;
+  text-align: right;
+}
+
+/* line 204, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:last-of-type a {
+  padding-right: 1.5em;
+}
+
+/* line 207, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:first-of-type a {
+  padding-left: 1.5em;
+}
+
+/* line 210, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:first-of-type a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: 0.5em solid transparent;
+  border-right: 1em solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0.5em solid transparent;
+}
+
+/* line 222, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:last-of-type a::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 2px;
+  width: 0;
+  height: 0;
+  border-top: 0.5em solid transparent;
+  border-left: 1em solid rgba(0, 0, 0, 0.5);
+  border-bottom: 0.5em solid transparent;
+}
+
+/* line 233, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:first-of-type a:hover::before {
+  border-right-color: #fff;
+}
+
+/* line 236, ../sass/partials/templates/portraits/_layout.scss */
+.pagenav li:last-of-type a:hover::after {
+  border-left-color: #fff;
+}
+
+@media only screen and (min-width: 450px) {
+  /* line 241, ../sass/partials/templates/portraits/_layout.scss */
+  .select-menu {
+    margin-top: -97px;
+  }
+
+  /* line 244, ../sass/partials/templates/portraits/_layout.scss */
+  .footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  /* line 253, ../sass/partials/templates/portraits/_layout.scss */
+  .svg-container {
+    margin-top: -7em;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  /* line 259, ../sass/partials/templates/portraits/_layout.scss */
+  .svg-gallery {
+    margin-top: -7em;
+  }
 }

@@ -1,0 +1,53 @@
+// http://h5bp.github.io/Effeckt.css/dist/
+
+.col,
+.effeckt-caption,
+.effeckt-caption a {
+  // position: relative;
+  // float: left;
+  overflow: hidden;
+  // width: 100%;
+}
+
+.effeckt-caption {
+  position: relative;
+}
+
+.effeckt-caption img {
+  // transition: 500ms;
+  // width: 100%;
+  display: block;
+}
+
+.effeckt-caption a {
+  width: 100%;
+  float: left;
+}
+.effeckt-caption figcaption {
+  position: absolute;
+  transition: 500ms;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.effeckt-caption figcaption p {
+  // @extend %reset;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.effeckt-caption[data-effeckt-type="quarter-slide-up"] figcaption {
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transform: translateY(100%);
+}
+
+.effeckt-caption[data-effeckt-type="quarter-slide-up"]:hover figcaption,
+.effeckt-caption[data-effeckt-type="quarter-slide-up"]:active figcaption {
+  opacity: 1;
+  transform: translateY(0);
+}
+

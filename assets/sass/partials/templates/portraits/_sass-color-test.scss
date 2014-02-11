@@ -1,0 +1,270 @@
+// sass-test-color
+$base00: hsl(16, 5%, 10%);    /* #1b1918 */
+$base01: hsl(16, 15%, 15%);   /* #2c2421 */
+$base02: hsl(16, 5%, 39%);    /* #68615e */
+$base03: hsl(16, 5%, 44%);    /* #766e6b */
+$base04: hsl(16, 5%, 59%);    /* #9c9491 */
+$base05: hsl(16, 5%, 64%);    /* #a8a19f */
+$base06: hsl(16, 10%, 89%);   /* #e6e2e0 */
+$base07: hsl(16, 10%, 94%);   /* #f1efee */
+$base08: hsl(354, 88%, 56%);  /* #f22c40 */
+$base09: hsl(16, 75%, 50%);   /* #df5320 */
+$base0a: hsl(38, 78%, 47%);   /* #d5911a */
+$base0b: hsl(104, 53%, 47%);  /* #5ab738 */
+$base0c: hsl(174, 100%, 34%); /* #00ad9c */
+$base0d: hsl(218, 78%, 58%);  /* #407ee7 */
+$base0e: hsl(240, 76%, 66%);  /* #6666ea */
+$base0f: hsl(284, 88%, 60%);  /* #c33ff3 */
+
+$red:     $base08;
+$orange:  $base09;
+$yellow:  $base0a;
+$green:   $base0b;
+$cyan:    $base0c;
+$blue:    $base0d;
+$violet:  $base0e;
+$magenta: $base0f;
+
+.is-hue-adjusted .base00    { fill: adjust-hue($base00,  15deg); }
+.is-hue-adjusted .base01    { fill: adjust-hue($base01,  15deg); }
+.is-hue-adjusted .base02    { fill: adjust-hue($base02,  15deg); }
+.is-hue-adjusted .base03    { fill: adjust-hue($base03,  15deg); }
+.is-hue-adjusted .base04    { fill: adjust-hue($base04,  15deg); }
+.is-hue-adjusted .base05    { fill: adjust-hue($base05,  15deg); }
+.is-hue-adjusted .base06    { fill: adjust-hue($base06,  15deg); }
+.is-hue-adjusted .base07    { fill: adjust-hue($base07,  15deg); }
+.is-hue-adjusted .c-red     { fill: adjust-hue($red,     15deg); }
+.is-hue-adjusted .c-orange  { fill: adjust-hue($orange,  15deg); }
+.is-hue-adjusted .c-yellow  { fill: adjust-hue($yellow,  15deg); }
+.is-hue-adjusted .c-green   { fill: adjust-hue($green,   15deg); }
+.is-hue-adjusted .c-cyan    { fill: adjust-hue($cyan,    15deg); }
+.is-hue-adjusted .c-blue    { fill: adjust-hue($blue,    15deg); }
+.is-hue-adjusted .c-violet  { fill: adjust-hue($violet,  15deg); }
+.is-hue-adjusted .c-magenta { fill: adjust-hue($magenta, 15deg); }
+
+.is-lightened .base00    { fill: lighten($base00,  15%); }
+.is-lightened .base01    { fill: lighten($base01,  15%); }
+.is-lightened .base02    { fill: lighten($base02,  15%); }
+.is-lightened .base03    { fill: lighten($base03,  15%); }
+.is-lightened .base04    { fill: lighten($base04,  15%); }
+.is-lightened .base05    { fill: lighten($base05,  15%); }
+.is-lightened .base06    { fill: lighten($base06,  15%); }
+.is-lightened .base07    { fill: lighten($base07,  15%); }
+.is-lightened .c-red     { fill: lighten($red,     15%); }
+.is-lightened .c-orange  { fill: lighten($orange,  15%); }
+.is-lightened .c-yellow  { fill: lighten($yellow,  15%); }
+.is-lightened .c-green   { fill: lighten($green,   15%); }
+.is-lightened .c-cyan    { fill: lighten($cyan,    15%); }
+.is-lightened .c-blue    { fill: lighten($blue,    15%); }
+.is-lightened .c-violet  { fill: lighten($violet,  15%); }
+.is-lightened .c-magenta { fill: lighten($magenta, 15%); }
+
+.is-darkened .base00    { fill: darken($base00,  15%); }
+.is-darkened .base01    { fill: darken($base01,  15%); }
+.is-darkened .base02    { fill: darken($base02,  15%); }
+.is-darkened .base03    { fill: darken($base03,  15%); }
+.is-darkened .base04    { fill: darken($base04,  15%); }
+.is-darkened .base05    { fill: darken($base05,  15%); }
+.is-darkened .base06    { fill: darken($base06,  15%); }
+.is-darkened .base07    { fill: darken($base07,  15%); }
+.is-darkened .c-red     { fill: darken($red,     15%); }
+.is-darkened .c-orange  { fill: darken($orange,  15%); }
+.is-darkened .c-yellow  { fill: darken($yellow,  15%); }
+.is-darkened .c-green   { fill: darken($green,   15%); }
+.is-darkened .c-cyan    { fill: darken($cyan,    15%); }
+.is-darkened .c-blue    { fill: darken($blue,    15%); }
+.is-darkened .c-violet  { fill: darken($violet,  15%); }
+.is-darkened .c-magenta { fill: darken($magenta, 15%); }
+
+.is-saturated .base00    { fill: saturate($base00,  15%); }
+.is-saturated .base01    { fill: saturate($base01,  15%); }
+.is-saturated .base02    { fill: saturate($base02,  15%); }
+.is-saturated .base03    { fill: saturate($base03,  15%); }
+.is-saturated .base04    { fill: saturate($base04,  15%); }
+.is-saturated .base05    { fill: saturate($base05,  15%); }
+.is-saturated .base06    { fill: saturate($base06,  15%); }
+.is-saturated .base07    { fill: saturate($base07,  15%); }
+.is-saturated .c-red     { fill: saturate($red,     15%); }
+.is-saturated .c-orange  { fill: saturate($orange,  15%); }
+.is-saturated .c-yellow  { fill: saturate($yellow,  15%); }
+.is-saturated .c-green   { fill: saturate($green,   15%); }
+.is-saturated .c-cyan    { fill: saturate($cyan,    15%); }
+.is-saturated .c-blue    { fill: saturate($blue,    15%); }
+.is-saturated .c-violet  { fill: saturate($violet,  15%); }
+.is-saturated .c-magenta { fill: saturate($magenta, 15%); }
+
+.is-desaturated .base00    { fill: desaturate($base00,  15%); }
+.is-desaturated .base01    { fill: desaturate($base01,  15%); }
+.is-desaturated .base02    { fill: desaturate($base02,  15%); }
+.is-desaturated .base03    { fill: desaturate($base03,  15%); }
+.is-desaturated .base04    { fill: desaturate($base04,  15%); }
+.is-desaturated .base05    { fill: desaturate($base05,  15%); }
+.is-desaturated .base06    { fill: desaturate($base06,  15%); }
+.is-desaturated .base07    { fill: desaturate($base07,  15%); }
+.is-desaturated .c-red     { fill: desaturate($red,     15%); }
+.is-desaturated .c-orange  { fill: desaturate($orange,  15%); }
+.is-desaturated .c-yellow  { fill: desaturate($yellow,  15%); }
+.is-desaturated .c-green   { fill: desaturate($green,   15%); }
+.is-desaturated .c-cyan    { fill: desaturate($cyan,    15%); }
+.is-desaturated .c-blue    { fill: desaturate($blue,    15%); }
+.is-desaturated .c-violet  { fill: desaturate($violet,  15%); }
+.is-desaturated .c-magenta { fill: desaturate($magenta, 15%); }
+
+.is-grayscaled .base00    { fill: grayscale($base00); }
+.is-grayscaled .base01    { fill: grayscale($base01); }
+.is-grayscaled .base02    { fill: grayscale($base02); }
+.is-grayscaled .base03    { fill: grayscale($base03); }
+.is-grayscaled .base04    { fill: grayscale($base04); }
+.is-grayscaled .base05    { fill: grayscale($base05); }
+.is-grayscaled .base06    { fill: grayscale($base06); }
+.is-grayscaled .base07    { fill: grayscale($base07); }
+.is-grayscaled .c-red     { fill: grayscale($red); }
+.is-grayscaled .c-orange  { fill: grayscale($orange); }
+.is-grayscaled .c-yellow  { fill: grayscale($yellow); }
+.is-grayscaled .c-green   { fill: grayscale($green); }
+.is-grayscaled .c-cyan    { fill: grayscale($cyan); }
+.is-grayscaled .c-blue    { fill: grayscale($blue); }
+.is-grayscaled .c-violet  { fill: grayscale($violet); }
+.is-grayscaled .c-magenta { fill: grayscale($magenta); }
+
+.is-complemented .base00   { fill: complement($base00); }
+.is-complemented .base01   { fill: complement($base01); }
+.is-complemented .base02   { fill: complement($base02); }
+.is-complemented .base03   { fill: complement($base03); }
+.is-complemented .base04   { fill: complement($base04); }
+.is-complemented .base05   { fill: complement($base05); }
+.is-complemented .base06   { fill: complement($base06); }
+.is-complemented .base07   { fill: complement($base07); }
+.is-complemented .c-red    { fill: complement($red); }
+.is-complemented .c-orange { fill: complement($orange); }
+.is-complemented .c-yellow { fill: complement($yellow); }
+// .is-complemented .c-orange { fill: complement($green); }
+// try attribute selectors which also does work.
+.is-complemented rect[fill="#5AB738"] { fill: complement($green); }
+.is-complemented .c-cyan    { fill: complement($cyan); }
+.is-complemented .c-blue    { fill: complement($blue); }
+.is-complemented .c-violet  { fill: complement($violet); }
+.is-complemented .c-magenta { fill: complement($magenta); }
+
+.is-inverted .base00    { fill: invert($base00); }
+.is-inverted .base01    { fill: invert($base01); }
+.is-inverted .base02    { fill: invert($base02); }
+.is-inverted .base03    { fill: invert($base03); }
+.is-inverted .base04    { fill: invert($base04); }
+.is-inverted .base05    { fill: invert($base05); }
+.is-inverted .base06    { fill: invert($base06); }
+.is-inverted .base07    { fill: invert($base07); }
+.is-inverted .c-red     { fill: invert($red); }
+.is-inverted .c-orange  { fill: invert($orange); }
+.is-inverted .c-yellow  { fill: invert($yellow); }
+.is-inverted .c-green   { fill: invert($green); }
+.is-inverted .c-cyan    { fill: invert($cyan); }
+.is-inverted .c-blue    { fill: invert($blue); }
+.is-inverted .c-violet  { fill: invert($violet); }
+.is-inverted .c-magenta { fill: invert($magenta); }
+
+.is-shaded .base00    { fill: shade($base00,  15%); }
+.is-shaded .base01    { fill: shade($base01,  15%); }
+.is-shaded .base02    { fill: shade($base02,  15%); }
+.is-shaded .base03    { fill: shade($base03,  15%); }
+.is-shaded .base04    { fill: shade($base04,  15%); }
+.is-shaded .base05    { fill: shade($base05,  15%); }
+.is-shaded .base06    { fill: shade($base06,  15%); }
+.is-shaded .base07    { fill: shade($base07,  15%); }
+.is-shaded .c-red     { fill: shade($red,     15%); }
+.is-shaded .c-orange  { fill: shade($orange,  15%); }
+.is-shaded .c-yellow  { fill: shade($yellow,  15%); }
+.is-shaded .c-green   { fill: shade($green,   15%); }
+.is-shaded .c-cyan    { fill: shade($cyan,    15%); }
+.is-shaded .c-blue    { fill: shade($blue,    15%); }
+.is-shaded .c-violet  { fill: shade($violet,  15%); }
+.is-shaded .c-magenta { fill: shade($magenta, 15%); }
+
+.is-tinted .base00    { fill: tint($base00,  15%); }
+.is-tinted .base01    { fill: tint($base01,  15%); }
+.is-tinted .base02    { fill: tint($base02,  15%); }
+.is-tinted .base03    { fill: tint($base03,  15%); }
+.is-tinted .base04    { fill: tint($base04,  15%); }
+.is-tinted .base05    { fill: tint($base05,  15%); }
+.is-tinted .base06    { fill: tint($base06,  15%); }
+.is-tinted .base07    { fill: tint($base07,  15%); }
+.is-tinted .c-red     { fill: tint($red,     15%); }
+.is-tinted .c-orange  { fill: tint($orange,  15%); }
+.is-tinted .c-yellow  { fill: tint($yellow,  15%); }
+.is-tinted .c-green   { fill: tint($green,   15%); }
+.is-tinted .c-cyan    { fill: tint($cyan,    15%); }
+.is-tinted .c-blue    { fill: tint($blue,    15%); }
+.is-tinted .c-violet  { fill: tint($violet,  15%); }
+.is-tinted .c-magenta { fill: tint($magenta, 15%); }
+
+/* =====   ===== */
+$c-f0f9fb: #f0f9fb;
+$c-843219: #843219;
+
+.is-hovered .c-f0f9fb {
+  fill: invert($c-f0f9fb);
+}
+.is-hovered .c-843219 {
+  fill: invert($c-843219);
+}
+/* =====   ===== */
+
+.btn {
+  // Suppress red glow that Firefox
+  // adds to form fields by default.
+  &:invalid {
+    @include box-shadow(none);
+  }
+
+  // Add blue glow.
+  &:focus {
+    @include box-shadow(#06f 0 0 5px 0);
+    // for Opera
+    z-index: 1;
+  }
+}
+
+.btn {
+  -webkit-appearance: none; @include border-radius(4px);
+  @include background-clip(padding-box);
+  @include background-image(linear-gradient(white, #ddd));
+  border: 1px solid;
+  border-color: #ddd #bbb #999;
+  cursor: pointer;
+  color: #333;
+  display: inline-block;
+  outline: 0;
+  overflow: visible;
+  margin: .5em .125em;
+  padding: .25em 1em .35em;
+  text-shadow: white 0 1px 1px;
+  text-decoration: none;
+  vertical-align: top;
+  width: auto;
+
+  // Helvetica Neue present, because it works better
+  // for line-height on buttons than Arial, on OS X.
+  // font: bold 12px/1.3 "Helvetica Neue", Arial, "Liberation Sans", FreeSans, sans-serif;
+  font-size: 1.125em;
+  @extend %sans-condensed;
+
+  // Base64 encoded "../images/button.png' with IE7 fallback
+  background: #ddd url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAAAAADhgtq/AAAAHElEQVQoz2P8z4ADsOCW+UeGnsFs2nDzz5AMHQA+JRlAyyOraAAAAABJRU5ErkJggg==) repeat-x;
+
+  &:hover {
+    @include background-image(linear-gradient(white, #eee 1px, #ccc));
+    text-decoration: none;
+  }
+
+  &:active {
+    @include background-image(linear-gradient(#ddd, #eee));
+    @include box-shadow(inset rgba(black, 0.25) 0 1px 2px 0);
+    border-color: #999 #bbb #ddd;
+  }
+}
+
+.reset {
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}  
