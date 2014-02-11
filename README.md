@@ -3,7 +3,7 @@
 Pixel art as SVG vectors
 
 
-* [Pixel Art Portraits](http://atelierbram.github.io/svg-pixel-art/portraits/pixel-artists/)
+* [Pixel Art Portraits](http://atelierbram.github.io/svg-pixel-art/portraits/)
 
 ### License
 
