@@ -52,12 +52,6 @@ document.getElementById("nav").addEventListener('change',function () {
     window.location = this.value;
 },false);
 </script>
-<!-- <script src="../../../../assets/js/build/production.min.js"></script> -->
-<!-- http://www.dailymail.co.uk/news/article-2380253/Legally-blind-97-year-old-Pixel-Painter-Hal-Lasko-swaps-oils-canvas-computer.html -->
-<!-- http://www.hallasko.com/ -->
-<!-- http://madeby.jennschiffer.com/about/ -->
-<!-- http://negativitysandwiches.com/pixelfies-an-art-and-code-thing-i-made/ -->
-<!-- http://www.reddit.com/r/PixelArt/ -->
 </body>
 </html>
 <?php ?>
