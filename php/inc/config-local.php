@@ -1,1 +1,1 @@
-<?php $rootUrl="http://localhost/~bram/playground/svg/svg-pixel-art/"; ?>
+<?php $rootUrl="http://localhost/~bram/github.com/atelierbram/svg-pixel-art/"; ?>
